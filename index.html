@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#245bff">
+  <meta name="description" content="Conheça o Ofertazz: descubra ofertas perto de você, compare sua lista de compras e ajude sua cidade a comprar melhor.">
+  <title>Ofertazz | Economize melhor. Juntos.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/lucide.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="header">
+    <a class="wordmark" href="#inicio" aria-label="Ofertazz, início">oferta<span>zz</span><b aria-hidden="true">.</b></a>
+    <nav aria-label="Navegação principal" id="navigation">
+      <a href="#como-funciona">Como funciona</a><a href="#economia">Sua economia</a><a href="#comunidade">Comunidade</a>
+    </nav>
+    <a class="button small dark header-cta" href="#conheca">Conheça o app <i data-lucide="arrow-up-right"></i></a>
+    <button class="menu-toggle icon-button" aria-label="Abrir menu" aria-controls="navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/market.jpg" alt="Bancas com frutas e vegetais frescos em um supermercado" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <div class="eyebrow light"><span class="status-dot"></span> A próxima boa compra começa aqui</div>
+        <h1 id="hero-title">ofertazz<span>.</span></h1>
+        <p class="hero-headline">Seu dinheiro vai mais longe.<br>Quando a gente encontra junto.</p>
+        <p class="hero-copy">Ofertas perto de você, preços para comparar e uma comunidade que ajuda a fazer a melhor escolha.</p>
+        <a class="button blue" href="#conheca">Descubra o Ofertazz <i data-lucide="arrow-up-right"></i></a>
+        <div class="hero-footnote"><i data-lucide="map-pin"></i> Feito para as compras da vida real.</div>
+      </div>
+      <a class="scroll-cue" href="#como-funciona" aria-label="Explorar a página"><i data-lucide="arrow-down"></i></a>
+      <div class="hero-stamp"><i data-lucide="scan-barcode"></i><span>Achou uma oferta?<br><strong>Compartilhe a descoberta.</strong></span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>MENOS PROCURA</span><i data-lucide="sparkles"></i><span>MAIS DESCOBERTAS</span><i data-lucide="sparkles"></i><span>COMPRE MELHOR</span><i data-lucide="sparkles"></i><span>ECONOMIZE JUNTO</span><i data-lucide="sparkles"></i><span>MENOS PROCURA</span><i data-lucide="sparkles"></i><span>MAIS DESCOBERTAS</span><i data-lucide="sparkles"></i><span>COMPRE MELHOR</span><i data-lucide="sparkles"></i><span>ECONOMIZE JUNTO</span><i data-lucide="sparkles"></i></div></div>
+
+    <section class="intro section wrap" id="como-funciona">
+      <div class="section-heading reveal"><p class="eyebrow">UMA COMPRA MAIS INTELIGENTE</p><h2>A oferta existe.<br>Agora você sabe onde.</h2><p>Você não precisa descobrir tudo sozinho. Veja o que outras pessoas encontraram e transforme informação em boas escolhas.</p></div>
+      <div class="steps">
+        <article class="step reveal"><span class="step-number">01 / ENCONTRE</span><div class="step-icon blue-tint"><i data-lucide="radar"></i></div><h3>Oportunidades ao seu redor.</h3><p>Busque um produto ou explore as categorias. Veja o preço, o mercado e quando a oferta foi publicada.</p></article>
+        <article class="step reveal"><span class="step-number">02 / COMPARE</span><div class="step-icon green-tint"><i data-lucide="list-checks"></i></div><h3>Sua lista. Uma visão melhor.</h3><p>Organize suas compras e compare os preços disponíveis nos mercados. Enxergue onde sua lista pode render mais.</p></article>
+        <article class="step reveal"><span class="step-number">03 / COMPARTILHE</span><div class="step-icon coral-tint"><i data-lucide="scan-barcode"></i></div><h3>Uma descoberta ajuda muita gente.</h3><p>Leia o código de barras, informe o preço e publique a oferta com foto. Sua contribuição faz a diferença.</p></article>
+      </div>
+    </section>
+
+    <section class="app-section section" id="conheca">
+      <div class="wrap app-layout">
+        <div class="app-copy reveal"><p class="eyebrow">DO “SERÁ?” AO “ACHEI!”</p><h2>Menos dúvida.<br>Mais poder<br>de escolha<span class="blue-text">.</span></h2><p>Do café da manhã à compra do mês, as informações que importam estão no mesmo lugar.</p>
+          <div class="feature-tabs" role="tablist" aria-label="Explore o Ofertazz">
+            <button role="tab" id="tab-offers" aria-controls="demo-panel" aria-selected="true" data-view="offers"><i data-lucide="tags"></i><span><strong>Descubra ofertas</strong><small>Produto, preço e mercado. Sem complicar.</small></span><i data-lucide="arrow-up-right"></i></button>
+            <button role="tab" id="tab-list" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-view="list"><i data-lucide="shopping-basket"></i><span><strong>Planeje sua lista</strong><small>Compare antes de sair de casa.</small></span><i data-lucide="arrow-up-right"></i></button>
+            <button role="tab" id="tab-trust" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-view="trust"><i data-lucide="badge-check"></i><span><strong>Conte com a comunidade</strong><small>Mais contexto para decidir com confiança.</small></span><i data-lucide="arrow-up-right"></i></button>
+          </div>
+        </div>
+        <div class="app-stage reveal">
+          <div class="stage-label"><span class="status-dot"></span> UM POUCO DA EXPERIÊNCIA OFERTAZZ</div>
+          <div class="phone" id="demo-panel" role="tabpanel" aria-labelledby="tab-offers">
+            <div class="phone-top"><span>9:41</span><span class="phone-island"></span><i data-lucide="battery-full"></i></div>
+            <div class="phone-screen"><div class="phone-brand">oferta<span>zz.</span><i data-lucide="bell"></i></div><p class="phone-subtitle">Economize melhor. Juntos.</p><div id="demo-content"></div></div>
+            <div class="phone-nav"><i data-lucide="house"></i><i data-lucide="trophy"></i><span><i data-lucide="plus"></i></span><i data-lucide="list-checks"></i><i data-lucide="user-round"></i></div>
+          </div>
+          <div class="floating-label"><span class="green-check"><i data-lucide="check"></i></span><span>Boa informação.<br><strong>Melhores escolhas.</strong></span></div>
+          <p class="demo-note">Demonstração ilustrativa. Produtos e preços de exemplo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="economy section wrap" id="economia">
+      <div class="economy-top reveal"><div><p class="eyebrow">PEQUENAS ESCOLHAS. NOVAS POSSIBILIDADES.</p><h2>E se comparar virasse<br>parte da sua rotina?</h2></div><p>Uma diferença pequena na compra pode se tornar uma oportunidade ao longo do ano. Experimente uma simulação.</p></div>
+      <div class="calculator reveal">
+        <div class="calculator-input"><div class="simulation-label"><i data-lucide="sliders-horizontal"></i> Simule sua economia potencial</div><label for="budget">Quanto você gasta por mês no mercado?</label><output for="budget" id="budget-value">R$ 800</output><input type="range" id="budget" min="200" max="3000" step="50" value="800"><div class="range-labels"><span>R$ 200</span><span>R$ 3.000</span></div><label class="percent-label" for="percent">Diferença de preço que você quer simular</label><div class="percent-controls"><input id="percent" type="range" min="1" max="25" value="10" step="1"><output for="percent" id="percent-value">10%</output></div><p class="disclaimer">Exemplo matemático, não uma promessa de economia. Preços, disponibilidade e resultados variam conforme as ofertas e suas escolhas.</p></div>
+        <div class="calculator-result"><span class="result-kicker">NO ANO, ISSO PODERIA REPRESENTAR</span><div class="annual-amount" id="annual-value">R$ 960<span>,00</span></div><p><strong id="monthly-value">R$ 80</strong> de economia potencial por mês.</p><div class="chart" aria-label="Comparação ilustrativa do gasto mensal"><div class="bar-row"><span>Sem comparar</span><div class="bar-track"><div class="bar regular"></div></div><strong id="before-value">R$ 800</strong></div><div class="bar-row"><span>Com a diferença simulada</span><div class="bar-track"><div class="bar saving" id="saving-bar"></div></div><strong id="after-value">R$ 720</strong></div></div><div class="chart-legend"><span></span> Mais espaço no seu orçamento.</div></div>
+      </div>
+      <div class="economy-bottom reveal"><i data-lucide="move-up-right"></i><p>Não é sobre comprar mais.<br><strong>É sobre escolher melhor.</strong></p><div class="mini-sparkline" aria-hidden="true"><svg viewBox="0 0 240 65"><path d="M0 58L30 49L60 53L90 34L120 39L150 22L180 28L210 10L240 4"/></svg></div></div>
+    </section>
+
+    <section class="community section" id="comunidade"><div class="wrap community-grid"><div class="community-copy reveal"><p class="eyebrow">QUEM AJUDA TAMBÉM EVOLUI</p><h2>Sua próxima descoberta<br>pode ser a boa compra<br>de alguém.</h2><p>Encontrou um preço interessante? Compartilhe. Viu a oferta no mercado? Confirme. Informação feita por pessoas, para pessoas.</p><a class="text-link" href="#perguntas">Entenda a ideia <i data-lucide="arrow-up-right"></i></a></div><div class="game-scene reveal"><img src="assets/jamir.png" alt="Jamir, o personagem do Ofertazz, comemorando" loading="lazy" width="176" height="535"><div class="game-info"><span class="xp-badge"><i data-lucide="sparkles"></i> CADA CONTRIBUIÇÃO CONTA</span><h3>Bom para você.<br>Melhor para todos.</h3><div class="level-track"><div></div></div><div class="level-caption"><span>Compartilhe. Contribua. Evolua.</span><i data-lucide="trophy"></i></div><ul><li><i data-lucide="zap"></i> Ganhe XP ao contribuir</li><li><i data-lucide="trending-up"></i> Acompanhe sua evolução de nível</li><li><i data-lucide="medal"></i> Participe dos rankings da comunidade</li></ul><p>XP reconhece sua participação. A confiança considera o histórico das suas contribuições.</p></div></div></div></section>
+
+    <section class="trust-band section wrap"><div class="reveal"><p class="eyebrow">INFORMAÇÃO COM CONTEXTO</p><h2>Uma oferta boa é mais<br>do que um preço baixo.</h2></div><div class="trust-points"><article class="reveal"><i data-lucide="camera"></i><div><h3>Uma foto faz diferença.</h3><p>A imagem ajuda a entender o produto e a oferta encontrada.</p></div></article><article class="reveal"><i data-lucide="clock-3"></i><div><h3>Você vê quando foi publicada.</h3><p>Confira a atualização e considere que preços podem mudar.</p></div></article><article class="reveal"><i data-lucide="shield-check"></i><div><h3>A comunidade ajuda a validar.</h3><p>Confirmações e contestações dão mais contexto. Ofertas também podem ser denunciadas para análise.</p></div></article></div></section>
+
+    <section class="faq section wrap" id="perguntas"><div class="reveal"><p class="eyebrow">DIRETO AO PONTO</p><h2>Ficou alguma dúvida?</h2></div><div class="faq-list reveal"><details><summary>O Ofertazz vende produtos?<i data-lucide="plus"></i></summary><p>Não. O Ofertazz ajuda você a encontrar ofertas e comparar preços. A compra é feita diretamente no mercado.</p></details><details><summary>De onde vêm as ofertas?<i data-lucide="plus"></i></summary><p>Das pessoas que encontram preços nos mercados e compartilham no aplicativo, informando o produto, o preço, o local e uma foto. A comunidade pode confirmar ou contestar as informações.</p></details><details><summary>A economia da simulação é garantida?<i data-lucide="plus"></i></summary><p>Não. A simulação usa o valor e o percentual escolhidos por você para mostrar uma possibilidade matemática. A economia real depende dos preços disponíveis, dos produtos e das suas decisões de compra.</p></details><details><summary>O aplicativo já está nas lojas?<i data-lucide="plus"></i></summary><p>O Ofertazz está em desenvolvimento e preparação para o piloto em Penápolis, SP. Esta página apresenta a experiência. Os links oficiais serão disponibilizados quando o aplicativo for publicado.</p></details><details><summary>O XP é dinheiro ou desconto?<i data-lucide="plus"></i></summary><p>Não. O XP representa sua participação no Ofertazz e permite acompanhar sua evolução de nível. Não é saldo, cashback ou um benefício em dinheiro.</p></details></div></section>
+
+    <section class="closing"><div class="wrap reveal"><p class="eyebrow">O FUTURO DA BOA COMPRA É COLABORATIVO</p><h2>Uma cidade conectada.<br>Milhares de boas escolhas.</h2><p>Conheça. Compartilhe a ideia.<br>Ajude mais pessoas a descobrir o Ofertazz.</p><button class="button dark" id="share-site">Compartilhar o Ofertazz <i data-lucide="share-2"></i></button><span class="pilot"><span class="status-dot"></span> Em preparação para o piloto · Penápolis, SP</span></div><div class="closing-word" aria-hidden="true">ofertazz</div></section>
+  </main>
+  <footer class="wrap"><a class="wordmark" href="#inicio">oferta<span>zz</span><b>.</b></a><p>Economize melhor. Juntos.</p><a href="#perguntas">Dúvidas frequentes <i data-lucide="arrow-up-right"></i></a><span>© <span id="year">2026</span> Ofertazz</span></footer>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+</html>
